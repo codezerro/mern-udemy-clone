@@ -1,0 +1,15 @@
+{
+    "Version": "2012-10-17",
+    "Id": "Policy1617451069490",
+    "Statement": [
+        {
+            "Sid": "Stmt1617451060569",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::486967259184:user/Ryan_stripe_platform"
+            },
+            "Action": "s3:*",
+            "Resource": "arn:aws:s3:::edemy-bucket"
+        }
+    ]
+}

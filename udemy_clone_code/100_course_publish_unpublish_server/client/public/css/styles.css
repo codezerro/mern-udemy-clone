@@ -1,0 +1,79 @@
+.square {
+  border-radius: 0px;
+}
+
+.jumbotron {
+  background-image: linear-gradient(to right, #007bff, #000);
+  color: #fff;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.ant-card-meta-title {
+  font-size: 12px;
+}
+
+.markdown-preview img {
+  max-width: 300px;
+}
+
+.left-bottom-radius {
+  border-radius: 0px 0px 10px 10px;
+}
+
+/* override bootstrap input textarea style */
+input,
+textarea,
+.list-group-item {
+  background-color: #000 !important;
+  color: white !important;
+  border: 1px solid #333 !important;
+}
+
+/* markdown body img */
+.single-post img {
+  max-width: 100% !important;
+  display: block;
+  margin: 0 auto;
+}
+
+/* markdown blockquote */
+blockquote {
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+
+/* typewriter effect */
+.typewriter > div {
+  overflow: hidden;
+  /* border-right: 3px solid #1890ff; */
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 2px;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
